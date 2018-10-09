@@ -1,0 +1,340 @@
+* {
+    outline: 0 !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.position-fixed {
+    position: fixed !important;
+}
+
+div.notyf {
+    z-index: 10000;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.display-table {
+    display: table;
+}
+
+.middle-aligned {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.transparent-button {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    padding: -20px;
+    min-width: 20px;
+}
+
+.transparent-a-newaccount {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    padding: 0;
+    min-width: 0;
+    min-height: 0;
+}
+
+.modal-header-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.form-loading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url(../svg/loading.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 180px 180px;
+    background-size: 180px 180px;
+    z-index: 2000;
+}
+
+.transparent-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #000;
+}
+
+.transparent-btn:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #58595b;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin-left {
+    margin-left: -15px !important;
+
+}
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-border-top {
+    border-top-color: transparent !important;
+}
+
+.no-border-right {
+    border-right-color: transparent !important;
+}
+
+.no-border-left {
+    border-left-color: transparent !important;
+}
+
+.with-transition,
+.with-transition-all,
+.with-transition-all * {
+    transition: all .2s cubic-bezier(.25, .8, .25, 1) !important;
+}
+
+.with-shadow:focus,
+.with-shadow:active,
+.with-shadow {
+    -webkit-box-shadow: 0px 6px 9px 0px rgba(98, 98, 98, 0.45) !important;
+    -moz-box-shadow: 0px 6px 9px 0px rgba(98, 98, 98, 0.45) !important;
+    box-shadow: 0px 6px 9px 0px rgba(98, 98, 98, 0.45) !important;
+}
+
+.with-shadow-top {
+    box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.14);
+}
+
+.with-shadow-right {
+    box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.14);
+}
+
+.with-shadow-bottom {
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.14);
+}
+
+.with-shadow-left {
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.14);
+}
+
+.button-with-shadow {
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.31);
+}
+
+.form-group {
+    position: relative;
+    margin-top: 60px;
+}
+
+.form-control {
+    border: none;
+    font-weight: bold;
+    outline: 0;
+    background-color: #fff;
+    padding: 15px 15px;
+    height: 44px;
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    border-radius: 15px !important;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #b9b9b9;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.form-control:-moz-placeholder { /* Firefox 18- */
+    color: #b9b9b9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #b9b9b9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #b9b9b9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.control-label.has-error {
+    font-weight: normal;
+    position: absolute;
+    bottom: -5px;
+    right: 2px;
+    font-size: 9pt;
+}
+
+.white-button {
+    font-size: 11pt;
+    background-color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    padding: 11px 10px 9px 10px;
+    color: #00547e;
+    border: none;
+    display: inline-block;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #fff;
+    color: #333;
+}
+
+.modal-dialog,
+.modal-content {
+    margin: 0;
+    border: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+
+/*Left*/
+.modal.left.fade .modal-dialog {
+    left: -320px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog {
+    left: 0;
+    width: 100%;
+}
+
+/*Right*/
+.modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+@media all and (max-width: 1024px) {
+    .mobile-hidden {
+        display: none !important;
+    }
+}
+
+.form-with-buttons {
+    padding-bottom: 20px;
+}
+
+.app-steps-form,
+small {
+    font-size: 12px;
+    font-weight: bolder;
+    color: #00547e;
+}
+
+.btn-alert-box-nope {
+    background-color: #c7c7c7;
+    color: #fff;
+}
+
+.btn-alert-box-gotcha {
+    background-color: #00547e;
+}
+
+.black{
+    background-color: rgb(50,50,50);
+}
+
+.rounded-button {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.blue-button {
+  background-color: #d20e47;
+  color: #fff;
+  font-size:16pt;
+  height: 50px;
+  border:none;
+}

@@ -1,0 +1,111 @@
+<div class="container-fluid full-width full-height" style="overflow-x:hidden; background-color: #f2eeee">
+	<div class="header"><img src="/assets/img/icons/fleury-logo.png?v=2" style="width: 130px;
+	width: 125px;
+	margin-left: 130px;"></div>
+	<div class="container" ng-show="viewType == 1">
+		<div class="map-header">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-group">
+						<input class="form-control  header-search-input with-shadow"
+						type="text"
+						placeholder="Buscar exame..."
+						id="valueToSearch"
+						ng-model="userSearch.search"
+
+						/>
+						<span type="submit" ng-click="userExamSearch(userSearch)" class="map-header-filter-toggle" style="right: 5px;
+						position: absolute;
+						margin-top: -32px; color: #737373;">
+						<button class="transparent-button">
+							<i class="fas fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="image-upload">
+
+		<div class="map-details-change-background text-center" style="padding-top: 10px; padding-bottom: 10px" >
+			<label>
+				<span style="font-size: 12pt; font-weight: bold; margin-bottom: 0" class="img-change-text img-change-text--bg with-transition text-center">UTILIZAR SUA GUIA DE EXAMES</span><br>
+				<span class="text-center" style="font-size: 22pt; color:#d20e47"> <i class="fas fa-camera"></i></span>
+				<input ng-model="ImageToSearch"  type="file" ng-show="false" accept="image/*" style="z-index: 5000;" id="fileInput"/>
+			</label>
+		</div>
+	</div>
+
+
+	<div class="col-md-12 text-center" style="margin-bottom: 10px" ng-show="currentExameIndex>0">
+		<span style="font-size:14pt; font-weight: bold; ">Encontramos os seguintes exames:</span>
+	</div>
+	<div class="list-item with-shadow with-transition position-relative animated fadeIn" ng-show="currentExameIndex>0" style="margin-bottom: 20px;" ng-repeat='exam in exams'>
+
+		<div class="row" ng-click="openDetails(sellingPointSale)">
+
+			<div class="col-xs-12">
+				<div class="view-list-info-right">
+					<div class="view-list-info-right-promotion-name text-center">
+						<span style="font-size: 18pt; font-weight:bold; color:#7c7b7b; text-align: center; margin-top: 15px">{{exam.nome}}</span>
+					</div>
+					<div class="list-item-promotion-selling-point-name">
+					</div>
+					<div class="view-list-info-right-price">
+						<div class="view-list-info-right-price-from">
+						</div>
+
+					</div>
+					<div class="list-item-promotion-selling-point-address text-center	" style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+						<span style="font-size: 10pt; font-weight:bold; color:#666; padding-left: 10px; padding-bottom: 15px">
+							{{exam.descricao}}
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="rounded-button blue-button full-width" ng-show="currentExameIndex>0" ng-click="gerarCronograma()"> Gerar meu cronograma </button>
+</div>
+<div style="padding-top: 60px" class="container" ng-show="viewType == 2">
+	<div class="list-item with-shadow with-transition position-relative animated fadeIn" style="margin-bottom: 20px;">
+
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="view-list-info-right">
+					<div class="view-list-info-right-promotion-name text-center">
+						<span style="font-size: 18pt; font-weight:bold; color:#7c7b7b; text-align: center; margin-top: 15px">Atenção</span><br>
+						<span style="font-size: 12pt; font-weight:bold; color:#7c7b7b; text-align: center; margin-top: 15px">Requisitos para os Exames</span>
+					</div>
+					<div class="exams text-left" style="margin: 10px 20px; font-weight: bold; font-size:18px;">
+						<span ng-repeat="restricao in cronogramaFinal.restricoes">{{restricao}}<br></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="list-item with-shadow with-transition position-relative animated fadeIn" style="margin-bottom: 20px;">
+
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="view-list-info-right">
+					<div class="view-list-info-right-promotion-name text-center">
+						<span style="font-size: 18pt; font-weight:bold; color:#7c7b7b; text-align: center; margin-top: 15px">Seus exames</span><br>
+						<span style="font-size: 12pt; font-weight:bold; color:#7c7b7b; text-align: center; margin-top: 15px">Aqui está seu cronograma de exames. <br> Seguindo a sequencia abaixo:</span>
+					</div>
+					<div class="exams text-left" style="margin: 10px 20px; font-weight: bold; font-size:18px;">
+						<span ng-repeat="exame in cronogramaFinal.exames">{{exame.nome}}<br></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<form method="post" action="/api/ics">
+		<button class="rounded-button blue-button full-width" ng-show="currentExameIndex>0" type="submmit"> Adicionar ao calendario </button>
+	</form>
+</div>
+</div>
+</div>
+

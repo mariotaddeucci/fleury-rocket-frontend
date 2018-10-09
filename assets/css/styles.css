@@ -1,0 +1,178 @@
+html,
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #black;
+}
+.main-page-header{
+
+}
+
+.main-page-header img:nth-child(1){
+    padding: 15px 8% 15px 17%;
+}
+
+.main-page-header img:nth-child(2){
+    padding-left: 15px;
+
+}
+
+.main-page-header-subtitle{
+    font-family: 'Bowlby One SC', cursive;
+    text-align: center;
+
+    padding:15px;
+}
+
+.main-page-header-subtitle strong{
+    color:#6abcfb;
+    font-weight: normal;
+    font-size: 22pt;
+}
+.main-page-header-subtitle span{
+    color:#ffffff;
+    font-weight: bolder;
+    font-size: 22pt;
+}
+.main-page-header-slider-background{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #00537f;
+    background-image: url(/assets/img/bg-images/fundo-esports.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.main-page-header-card{
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 500px;
+    border: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.main-page-slider{
+    margin-bottom: -30px;
+}
+
+.form-with-buttons small {
+    color: #ffffff;
+}
+.form-with-buttons{
+    align-items: center;
+}
+.button{
+    height: 50px;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 16pt;
+    font-weight: bolder;
+    background-color: #6abcfb;
+    color: #ffffff;
+    border: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+   
+}
+.button:hover{
+    background-color: #ffffff;
+    color: #6abcfb;
+    cursor: -webkit-grab;
+   
+}
+
+.button-blue{
+    height: 40px;
+    width: 200px;
+    margin-left: 10px;
+    font-size: 16pt;
+    font-weight: bolder;
+    background-color: #6abcfb;
+    color: #ffffff;
+    border: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.button-blue:hover{
+    background-color: #ffffff;
+    color: #6abcfb;
+    cursor: -webkit-grab;
+
+}
+
+.button-red{
+    height: 40px;
+    width: 200px;
+    margin-left: 10px;
+    font-size: 16pt;
+    font-weight: bolder;
+    background-color: #d43f3a;
+    color: #ffffff;
+    border: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.button-red:hover{
+    background-color: #ffffff;
+    color: #d43f3a;
+    cursor: -webkit-grab;
+}
+.cad-button{
+
+}
+.user-login-form{
+    margin-top: 30px;
+}
+.user-register-form{
+    margin-top: 30px;
+}
+.account-login-separator{
+    color: #ffffff;
+}
+.account-login-separator > span {
+     font-size: 11pt;
+     font-weight: bold;
+     width: 100%;
+     display: inline-block;
+     margin: auto;
+     text-align: center;
+     padding: 15px 0;
+     position: relative;
+ }
+
+.m-15{
+    margin-top:15px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+::-webkit-scrollbar              { display: none}
+::-webkit-scrollbar-button       {}
+::-webkit-scrollbar-track        {}
+::-webkit-scrollbar-track-piece  {}
+::-webkit-scrollbar-thumb        {}
+::-webkit-scrollbar-corner       {}
+::-webkit-resizer                {}
+
+.header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d20e47;
+    padding: 5px 0;
+    height: 50px;
+}
